@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Homework</title>
+    <style>
+
+        h1, table {
+            font-weight: bold; color: black;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        .tableText, th {
+            text-align: center;
+        }
+
+        table {
+            border-spacing: 3px;
+        }
+
+        .div{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .QA{
+            border: 1px solid;
+            width: 420px;
+            padding: 0px 20px;
+            margin-top: 20px; 
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Planets</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th>Name</th>
+                <th>Mass (1024kg)</th>
+                <th>Diameter (km)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tableText" rowspan="4" colspan="2" >Terrestrial planets</td>
+                <td class="tableText">Mercury</td>
+                <td>0.33</td>
+                <td>4.879</td>
+            </tr>
+
+            <tr>
+                <td class="tableText">Venus</td>
+                <td>4.87</td>
+                <td>12,104</td>
+            </tr>
+
+            <tr>
+                <td class="tableText">Earth</td>
+                <td>5.97</td>
+                <td>12,756</td>
+
+            </tr>
+                <td class="tableText">Mars</td>
+                <td>0,642</td>
+                <td>6,792</td>
+            </tr>
+
+            <tr>    
+                <td rowspan="4" class="tableText">Jovian planets</td>
+                <td rowspan="2" class="tableText">Gas giants</td>
+                <td class="tableText">Jupiter</td>
+                <td>1898</td>
+                <td>142.984</td>
+            </tr>
+
+            <tr>    
+                <td class="tableText">Saturn</td>
+                <td>568</td>
+                <td>120,536</td>
+            </tr>
+
+            <tr>    
+                <td rowspan="2" class="tableText">Ice giants</td>
+                <td class="tableText">Uranus</td>
+                <td>86.8</td>
+                <td>51,118</td>
+            </tr>
+
+            <tr>    
+                <td class="tableText">Neptune</td>
+                <td>102</td>
+                <td>49,528</td>
+            </tr>
+
+            <td colspan="2" class="tableText">Dwarf planets</td>
+                <td class="tableText">Pluto</td>
+                <td>0.0146</td>
+                <td>2,370</td>
+        </tbody>
+    </table>
+
+    <form>
+        <fieldset class="QA">
+            <legend>Ask us about planets</legend>
+   
+            <div class="div">
+                <label for="ID" name="full_name">Full name: </label>
+                <input type="text" id="ID" name="full_name" required> 
+            </div>
+
+            <div class="div">
+                <label for="email" name="email">Email: </label>
+                <input type="email" id="email" name="email" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" required>
+            </div>
+       
+            <div>
+                <p>
+                    Favorite planet: 
+                </p>
+
+                <div>
+                    <input type="radio" name="planet" value="mercury">Mercury
+                </div>
+
+                <div>
+                    <input type="radio" name="planet" value="venus">Venus
+                </div>
+
+                <div>
+                    <input type="radio" name="planet" value="earth" checked>Earth
+                </div>
+
+                <div>
+                    <input type="radio" name="planet" value="mars">Mars
+
+                <div>
+                    <input type="radio" name="planet" value="jupiter">Jupiter
+                </div>
+
+                <div>
+                    <input type="radio" name="planet" value="saturn">Saturn
+                </div>
+
+                <div>
+                    <input type="radio" name="planet" value="uranus">Uranus
+                </div>
+
+                <div>
+                    <input type="radio" name="planet" value="neptune">Neptune
+                </div>
+
+                <div>
+                    <input type="radio" name="planet" value="pluto">Pluto
+                </div>
+
+                <div class="div">
+                    <input type="checkbox" name="agree" required> I agree to the
+                    <a href="https://github.com/groszwilhelm/html-homework/blob/master/reference.png" name="terms and conditions" title="terms and conditions">terms and conditions</a>
+                </div>
+
+                <div class="div">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Ask away</button>
+                </div>
+            </div>    
+        </fieldset>
+    </form>
+
+</body>
+</html>
